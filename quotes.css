@@ -1,0 +1,63 @@
+.quotes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.quote-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.quote-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.quote-card::before {
+    content: '"';
+    position: absolute;
+    top: -20px;
+    right: 10px;
+    font-size: 100px;
+    color: var(--royal-blue-traditional);
+    opacity: 0.1;
+    font-family: Georgia, serif;
+}
+
+.quote-content {
+    position: relative;
+    z-index: 1;
+}
+
+.quote-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--federal-blue);
+    margin: 0;
+    text-align: right;
+}
+
+/* מדיה קוורי להתאמה למסכים קטנים */
+@media (max-width: 768px) {
+    .quotes-container {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .quote-card {
+        padding: 1rem;
+    }
+
+    .quote-content p {
+        font-size: 1rem;
+    }
+}

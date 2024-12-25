@@ -1,0 +1,139 @@
+body {
+    background: radial-gradient(circle at top, #182472, #000863, #c7031b);
+    color: white;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    background: var(--fire-engine-red);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+}
+
+header h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    color: #ebe1e6;
+}
+
+#timeline {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 15px;
+    margin: 40px auto;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+    width: 90%;
+    max-width: 1200px;
+}
+
+.timeline {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 4px;
+    background: linear-gradient(to bottom, #182472, #c7031b);
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+
+    color: white;
+}
+
+.timeline-item:nth-child(odd) {
+    margin-left: 50%;
+}
+
+.timeline-item:nth-child(even) {
+    margin-right: 50%;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background: #c7031b;
+    border-radius: 50%;
+    border: 4px solid white;
+    left: calc(-10px - 2px);
+}
+
+.timeline-item:nth-child(even)::after {
+    right: calc(-10px - 2px);
+    left: auto;
+}
+
+.timeline-item span.year {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.timeline-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#intro p {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: justify;
+    line-height: 1.8;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+#achievements {
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    max-width: 1200px;
+    color: white;
+    text-align: center;
+}
+
+#achievements ul {
+    list-style: none;
+    padding: 0;
+    line-height: 2;
+}
+
+#achievements ul li {
+    background: linear-gradient(to right, #182472, #c7031b);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+}

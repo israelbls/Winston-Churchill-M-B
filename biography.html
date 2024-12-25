@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ביוגרפיה - וינסטון צ'רצ'יל</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylebio.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <img id="logo-img" src="images/home_page/churchil.png" alt="Winston Churchill">
+            <div>
+                <h1>ביוגרפיה</h1>
+                <h2>חיי וינסטון צ'רצ'יל</h2>
+            </div>
+            <img id="flag" src="images/home_page/flag.png" alt="British Flag">
+        </div>
+    </header>
+
+    <main>
+        <section id="intro" class="animate__animated animate__fadeIn">
+            <p>
+                וינסטון ליאונרד ספנסר צ'רצ'יל (1874–1965) היה אחד המדינאים הבולטים ביותר של המאה ה-20. הוא כיהן כראש ממשלת בריטניה בשתי קדנציות והיה מנהיג בעל חזון ויכולת רטורית יוצאת דופן. הוא זכור במיוחד בזכות הנהגתו בזמן מלחמת העולם השנייה, אך תרומתו חורגת הרבה מעבר לתקופה זו. צ'רצ'יל היה גם סופר פורה, היסטוריון, אמן חובב, וקיבל את פרס נובל לספרות על פועלו.
+            </p>
+            <p>
+                צ'רצ'יל נולד למשפחה אריסטוקרטית, ונכנס לחיים הפוליטיים בגיל צעיר. הוא מילא שורה של תפקידים ציבוריים חשובים, כולל שר הימיה, שר הפנים ושר האוצר. הוא חזה מראש את עליית הנאציזם והיה אחד הקולות הבודדים שהזהירו מפני הסכנה. בתקופת מלחמת העולם השנייה הוא הוביל את בריטניה בנחישות ובאומץ, והיה סמל לעמידה איתנה מול האויב.
+            </p>
+        </section>
+
+        <section id="timeline">
+            <h2>ציר זמן</h2>
+            <div class="timeline">
+                <div class="timeline-item gradient-background">
+                    <span class="year">1874</span>
+                    <p>נולד בוודסטוק, אנגליה, למשפחת אצולה.</p>
+                </div>
+                <div class="timeline-item gradient-background">
+                    <span class="year">1895</span>
+                    <p>החל את הקריירה הצבאית שלו בצבא הבריטי.</p>
+                </div>
+                <div class="timeline-item gradient-background">
+                    <span class="year">1900</span>
+                    <p>נבחר לראשונה כחבר פרלמנט מטעם המפלגה השמרנית.</p>
+                </div>
+                <div class="timeline-item gradient-background">
+                    <span class="year">1940</span>
+                    <p>מונה לראש ממשלת בריטניה והוביל את המדינה במלחמת העולם השנייה.</p>
+                </div>
+                <div class="timeline-item gradient-background">
+                    <span class="year">1953</span>
+                    <p>זכה בפרס נובל לספרות על כתיבתו והיסטוריוגרפיה שלו.</p>
+                </div>
+                <div class="timeline-item gradient-background">
+                    <span class="year">1965</span>
+                    <p>נפטר ונקבר בטקס ממלכתי מפואר בכנסיית סנט מרטין.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="achievements" class="animate__animated animate__fadeIn">
+            <h2>הישגים בולטים</h2>
+            <ul>
+                <li>מנהיגות בתקופת מלחמת העולם השנייה שהובילה לניצחון בעלות הברית.</li>
+                <li>זכייה בפרס נובל לספרות בשנת 1953 על תרומתו ההיסטורית והספרותית.</li>
+                <li>כתיבת ספרים ומאמרים חשובים, ביניהם "ההיסטוריה של העמים דוברי האנגלית".</li>
+                <li>קידום מדיניות ביטחונית ודיפלומטית שהשפיעה על עתידה של בריטניה.</li>
+                <li>ציור מאות יצירות אמנות שהוצגו בתערוכות נחשבות.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Winston Churchill Biography</p>
+    </footer>
+
+    <script>
+        gsap.from("#intro", { duration: 1, opacity: 0, y: -50 });
+        gsap.from(".timeline-item", { duration: 1, opacity: 0, y: 30, stagger: 0.3 });
+        gsap.from("#achievements ul li", { duration: 1, opacity: 0, x: -50, stagger: 0.2 });
+    </script>
+</body>
+
+</html>

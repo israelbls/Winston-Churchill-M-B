@@ -1,0 +1,75 @@
+.facts-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 20px;
+}
+
+.facts-section {
+    margin-bottom: 3rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.facts-section h2 {
+    color: var(--federal-blue);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid var(--fire-engine-red);
+}
+
+.fact-card {
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-right: 5px solid var(--royal-blue-traditional);
+    transition: transform 0.3s ease;
+}
+
+.fact-card:hover {
+    transform: translateX(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.fact-card h3 {
+    color: var(--fire-engine-red);
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+}
+
+.fact-card p {
+    color: #333;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .facts-container {
+        padding: 0 15px;
+    }
+
+    .facts-section {
+        padding: 1.5rem;
+    }
+
+    .fact-card {
+        padding: 1rem;
+    }
+
+    .fact-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .fact-card p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .facts-section h2 {
+        font-size: 1.5rem;
+    }
+}
